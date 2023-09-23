@@ -100,7 +100,7 @@ conda ve pipenv hem paket yönetimi hem virtual env yönetimi yapabilmektedir.
 # Paket yükleme:
 # pip install pandas
 
-###############################################
+#######################
 # eğer ortam deeğişkenlerini birisine aktarmak istersek yapmamız gereken:
 # conda env export > environment.yaml
 
@@ -348,49 +348,4 @@ set1 & set2
 
 set1.union(set2)
 set2.union(set1)
-
-
-####################################################################################
-#                       DATA STRUCTURE ALIŞTIRMALAR
-# ##################################################################################
-
-
-# 1) Write a line of code that creates a list containing the first 10 Fibonacci numbers.
-# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-
-fibonacci = [0,1]
-
-while len(fibonacci)<10:
-    fibonacci.append(fibonacci[-1]+fibonacci[-2])
-print(fibonacci)
-
-
-# 2) Write a line of code that counts the number of unique characters in a string.
-string = "hello world"
-# 8
-unique_char = len(set(string))
-print(unique_char)
-
-# 3) Write a line of code that finds the second smallest element in a list.
-my_list = [5, 3, 1, 4, 2,12,0,-4]
-# 0
-
-sorted(set(my_list))[1]
-
-list(set(my_list))[1]
-
-
-# 4) Write a line of code that creates a tuple containing the squares of numbers from 1 to 5.
-#(1, 4, 9, 16, 25)
-
-tuple([x**2 for x in range(1,6)])
-
-
-# 5) Write a line of code that removes duplicates from a list and converts it into a tuple.
-my_list = [1, 2, 3, 2, 4, 5, 3, 1]
-# (1, 2, 3, 4, 5)
-
-tuple(set(my_list))
-
-sorted(set(my_list))
 

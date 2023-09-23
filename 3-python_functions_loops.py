@@ -1,4 +1,6 @@
 """
+Konu başlıkları:
+
 - Fonksiyonlar
 - Docstring
 - Fonksiyon Okuryazarlığı
@@ -71,8 +73,6 @@ def calculate_area(length, width):
 
 rectangle_area = calculate_area(10, 5)
 print(rectangle_area)
-
-
 
 
 # Rakamlar arasından ortalamayı hesaplamak
@@ -166,10 +166,6 @@ kullanici_sayi = int(input("Bir sayi giriniz:"))
 sayi_kontrol(kullanici_sayi)
 
 
-"""kullanici_sayisi = int(input("Bir sayı girin: "))
-sayi_kontrol(kullanici_sayisi)
-"""
-
 # For Döngüsü
 
 """
@@ -228,34 +224,16 @@ for i in range(1,11):
 # 1 x 10 = 10
 # --------------------
 
-"""
-for i in range(1, 11):
-    for j in range(1, 11):
-        carpim = i * j
-        print(f"{i} x {j} = {carpim}")
-    print("--------------------")
-"""
-
-
-
 
 # Üçgen Sayılar
 # [1,3,6,10,15,21]
 
-for i in range(1,7):
-    ucgen_sayi = (i*(i+1))//2
-    print(ucgen_sayi)
-
-n = int(input("Kaç terimli üçgen sayısı bulmak istersin?"))
-
-
-"""
 n = int(input("Kaç terimli üçgen sayılarını bulmak istiyorsunuz? "))
 
 for i in range(1, n + 1):
-    ucgen = (i * (i + 1)) // 2
-    print(ucgen)
-"""
+    ucgen_sayi = (i * (i + 1)) // 2
+    print(ucgen_sayi)
+
 
 # Palindromik Sayılar
 # 22
@@ -267,30 +245,8 @@ for i in range(1, n + 1):
 # 88
 # 99
 
-"""
-baslangic = int(input("Başlangıç sayısını girin: "))
-bitis = int(input("Bitiş sayısını girin: "))
-
-for sayi in range(baslangic, bitis + 1):
-    sayi_str = str(sayi)
-    ters_str = sayi_str[::-1]
-    if sayi_str == ters_str:
-        print(sayi)
-"""
-
-sayi_str = str(212)
-sayi_str[::-1]
-
-212
-
 basla = int(input("Başlangıç sayısını seçiniz:"))
 bitis = int(input("Bitiş sayısını seçiniz"))
-
-for sayi in range(10,250):
-    sayi_str = str(sayi)
-    ters_str = sayi_str[::-1]
-    if sayi_str == ters_str:
-        print(sayi)
 
 for sayi in range(basla, bitis):
     sayi_str = str(sayi)
@@ -301,8 +257,10 @@ for sayi in range(basla, bitis):
 
 # Break - Continue - While
 
-# break?
-
+# break
+"""
+break ifadesi bir döngüyü tamamen sonlandırmak için kullanılır
+"""
 
 # continue
 """
@@ -310,7 +268,6 @@ Döngüyü atla
 """
 
 # while
-
 """
 break ifadesi bir döngüyü tamamen sonlandırmak için kullanılırken, 
 continue ifadesi bir döngü adımını atlayarak bir sonraki adıma geçmek için kullanılır. 
@@ -340,7 +297,7 @@ while True:
 print("Toplam:", toplam)
 
 """"
-while döngüsü sonsuz bir döngü olarak başlıyor (while True). Kullanıcıdan sürekli olarak bir sayı girmesini istiyoruz
+while döngüsü burada sonsuz bir döngü olarak başlıyor (while True). Kullanıcıdan sürekli olarak bir sayı girmesini istiyoruz
 """
 
 
@@ -353,7 +310,6 @@ döngü yapmayı sağlayan bir Python fonksiyonudur.
 enumerate(iterable, start=0)
 
 """
-
 
 players = ["modric","kross","iniesta","xavi"]
 
