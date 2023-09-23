@@ -115,6 +115,7 @@ print(sub)
 
 # [string[i:j] for i in range(4) for j in range(i+1,5)]
 
+###---------------------------------###
 
 #2 Write a list comprehension that flattens a nested list into a single list.
 nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -131,6 +132,7 @@ print(single)
 # List Comprehension
 [x for flat in nested_list for x in flat]
 
+###---------------------------------###
 
 #3 Write a list comprehension that generates a list of all possible combinations of two strings from two given lists.
 list1 = ['a', 'b']
@@ -139,6 +141,7 @@ list2 = ['x', 'y']
 
 [ x + y for x in list1 for y in list2]
 
+###---------------------------------###
 
 #4 Write a list comprehension that generates a list of prime numbers up to a given number n.
 # [2, 3, 5, 7, 11, 13, 17, 19]
@@ -167,6 +170,7 @@ print(prime_sayılar)
 n=20
 [number for number in range(2,n+1) if all(number % i != 0 for i in range(2,int(number**0.5)+1))]
 
+###---------------------------------###
 
 #5 Write a list comprehension that finds all numbers in a given list that are divisible by the sum of their digits.
 numbers = [12, 23, 34, 45, 56, 67, 78, 89, 90]
@@ -175,6 +179,7 @@ numbers = [12, 23, 34, 45, 56, 67, 78, 89, 90]
 result = [num for num in numbers if num % sum(int(digit) for digit in str(num)) == 0]
 print(result)
 
+###---------------------------------###
 
 #6 Extracting even-length words from a list of strings:
 strings = ["apple", "banana", "orange", "kiwi", "grape"]
@@ -183,6 +188,7 @@ strings = ["apple", "banana", "orange", "kiwi", "grape"]
 even_length_words = [word for word in strings if len(word) % 2 == 0]
 print(even_length_words)
 
+###---------------------------------###
 
 #7 A listesindeki elemanları for döngüsü kullanarak B listesine taşımak
 A = [20, 35, 48, 50, 23]
@@ -207,6 +213,7 @@ def transform(liste1,liste2):
 
 liste1,liste2 = transform(A,B)
 
+###---------------------------------###
 
 #8 unique elemanları döndüren fonksiyonu yazınız.
 no_unique_list = [1,1,1,2,2,2,3,5,5,5,7,7,7,9,9,9]
@@ -219,6 +226,7 @@ def no_unique(i):
 
 no_unique(no_unique_list)
 
+###---------------------------------###
 
 #9 Bir sayı listesi alıp bu listenin içindeki tüm elemanları toplayan fonksiyonu yazınız.
 sampleList = [15,25,40,55,60]
@@ -234,6 +242,7 @@ sampleList = [15, 25, 40, 55, 60]
 toplam = sum(sampleList)
 print("Liste Elemanlarının Toplamı:", toplam)
 
+###---------------------------------###
 
 #10 For döngüsü kullanarak faktöriyel hesabını yazınız.
 def faktoriyel(n):
@@ -247,6 +256,7 @@ n = 5
 faktoriyeller = faktoriyel(n)
 print(faktoriyeller)
 
+###---------------------------------###
 
 #11 For döngüsü kullanarak girilen sayının faktöriyel hesabını yazan fonksiyonu yazınız
 def faktoriyel_hesapla(n):
@@ -264,6 +274,7 @@ sayi = int(input("Faktöriyelini hesaplamak istediğiniz sayıyı girin: "))
 faktoriyel = faktoriyel_hesapla(sayi)
 print("Faktöriyel:", faktoriyel)
 
+###---------------------------------###
 
 #12 players listesinde kelime uzunluğu 6'den küçük olanları getiren listeyi tanımla
 players = ["messi","ronaldo","benzema","mbappe","haaland"]
@@ -277,3 +288,5 @@ liste
 
 goat = [i for i in players if len(i)< 6]
 print(goat)
+
+

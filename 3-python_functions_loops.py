@@ -74,6 +74,7 @@ def calculate_area(length, width):
 rectangle_area = calculate_area(10, 5)
 print(rectangle_area)
 
+###---------------------------------###
 
 # Rakamlar arasından ortalamayı hesaplamak
 def calculate_average(numbers):
@@ -83,7 +84,7 @@ sayilar = [85, 90, 92, 88, 95]
 average_grade = calculate_average(sayilar)
 print(average_grade)
 
-#
+###---------------------------------###
 
 def yashesapla(dogumyili):
     return 2023-dogumyili
@@ -100,6 +101,7 @@ def emeklilikhesap(dogumyili,isim):
 
 emeklilikhesap(1989,'Gürkan')
 
+###---------------------------------###
 
 # Yaş, sigorta ve çalışma yılına uygun emeklilik hesap fonksiyonu
 
@@ -126,6 +128,7 @@ calisma_yili = 11
 result = uygunluk_durumu(age, insurance, calisma_yili)
 print(result)
 
+###---------------------------------###
 
 # Bir hesap makinesi fonksiyonu kullanarak, toplama ve çıkarma işlemlerini gerçekleştiren bir hesap makinesi uygulaması
 
@@ -165,6 +168,7 @@ sayi_kontrol(10)
 kullanici_sayi = int(input("Bir sayi giriniz:"))
 sayi_kontrol(kullanici_sayi)
 
+###---------------------------------###
 
 # For Döngüsü
 
@@ -203,6 +207,8 @@ def kontrol_fonksiyonu(sayilar):
 liste = [2, 5, 8, 3, 1, 6]
 kontrol_fonksiyonu(liste)
 
+###---------------------------------###
+
 # Örnekler
 
 for i in range(1,11):
@@ -224,6 +230,7 @@ for i in range(1,11):
 # 1 x 10 = 10
 # --------------------
 
+###---------------------------------###
 
 # Üçgen Sayılar
 # [1,3,6,10,15,21]
@@ -234,6 +241,7 @@ for i in range(1, n + 1):
     ucgen_sayi = (i * (i + 1)) // 2
     print(ucgen_sayi)
 
+###---------------------------------###
 
 # Palindromik Sayılar
 # 22
@@ -254,6 +262,8 @@ for sayi in range(basla, bitis):
     if sayi_str == ters_str:
         print(sayi)
 
+
+###---------------------------------###
 
 # Break - Continue - While
 
@@ -300,6 +310,7 @@ print("Toplam:", toplam)
 while döngüsü burada sonsuz bir döngü olarak başlıyor (while True). Kullanıcıdan sürekli olarak bir sayı girmesini istiyoruz
 """
 
+###---------------------------------###
 
 # Enumerate : Otomatik Index ile for loop
 
@@ -328,6 +339,8 @@ kelimeler = input("Kelime listesini girin (virgülle ayırın): ").split(",")
 for indeks, kelime in enumerate(kelimeler,1):
     print(indeks, kelime.strip())
 
+
+###---------------------------------###
 
 #######################
 #  Lambda
@@ -377,3 +390,5 @@ print(toplam)
 liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 tekler = list(filter(lambda x: x % 2 != 0,liste))
 print(tekler)
+
+
